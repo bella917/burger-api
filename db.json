@@ -1,12 +1,6 @@
 {
   "burgers": [
-    { 
-      "id": "beef",
-      "name": "Beef Patty"
-    },
-    { 
-      "id": "chicken",
-      "name": "Chicken Patty"
-    }
+    { "id": "beef", "name": "Beef Patty" },
+    { "id": "chicken", "name": "Chicken Patty" }
   ]
 }
