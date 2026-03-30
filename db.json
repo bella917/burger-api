@@ -1,6 +1,98 @@
 {
   "burgers": [
-    { "id": "beef", "name": "Beef Patty" },
-    { "id": "chicken", "name": "Chicken Patty" }
+    {
+      "id": "beef",
+      "title": "Classic Beef Burger",
+      "steps": [
+        {
+          "id": "bun",
+          "type": "multiple-choice",
+          "instruction": "Choose your bun",
+          "options": ["Sesame", "Brioche", "Lettuce Wrap"],
+          "feedback": null
+        },
+        {
+          "id": "protein",
+          "type": "multiple-choice",
+          "instruction": "Choose your protein",
+          "options": ["Single Beef", "Double Beef", "Plant-Based"],
+          "feedback": null
+        },
+        {
+          "id": "toppings",
+          "type": "multiple-choice",
+          "instruction": "Choose your toppings",
+          "options": ["Lettuce", "Tomato", "Pickles", "Onions"],
+          "feedback": null
+        },
+        {
+          "id": "sauce",
+          "type": "text",
+          "instruction": "Enter number of sauce servings",
+          "feedback": {
+            "condition": "amount > 3",
+            "message": "Too much sauce might overpower the flavor!"
+          }
+        },
+        {
+          "id": "extras",
+          "type": "image-selection",
+          "instruction": "Choose extras",
+          "imageOptions": [
+            { "url": "img/cheese.jpg", "label": "Cheese" },
+            { "url": "img/bacon.jpg", "label": "Bacon" },
+            { "url": "img/double.jpg", "label": "Double Patty" }
+          ],
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "id": "chicken",
+      "title": "Grilled Chicken Burger",
+      "steps": [
+        {
+          "id": "bun",
+          "type": "multiple-choice",
+          "instruction": "Choose your bun",
+          "options": ["Sesame", "Brioche", "Lettuce Wrap"],
+          "feedback": null
+        },
+        {
+          "id": "protein",
+          "type": "multiple-choice",
+          "instruction": "Choose your protein",
+          "options": ["Grilled Chicken", "Crispy Chicken", "Plant-Based"],
+          "feedback": null
+        },
+        {
+          "id": "toppings",
+          "type": "multiple-choice",
+          "instruction": "Choose your toppings",
+          "options": ["Lettuce", "Tomato", "Pickles", "Onions"],
+          "feedback": null
+        },
+        {
+          "id": "sauce",
+          "type": "text",
+          "instruction": "Enter number of sauce servings",
+          "feedback": {
+            "condition": "amount > 2",
+            "message": "Too much sauce might make it soggy!"
+          }
+        },
+        {
+          "id": "extras",
+          "type": "image-selection",
+          "instruction": "Choose extras",
+          "imageOptions": [
+            { "url": "img/cheese.jpg", "label": "Cheese" },
+            { "url": "img/bacon.jpg", "label": "Bacon" },
+            { "url": "img/double.jpg", "label": "Double Patty" }
+          ],
+          "feedback": null
+        }
+      ]
+    }
   ]
 }
