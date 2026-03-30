@@ -1,0 +1,6 @@
+{
+  "burgers": [
+    { "id": "beef", "name": "Classic Beef Burger" },
+    { "id": "chicken", "name": "Grilled Chicken Burger" }
+  ]
+}
