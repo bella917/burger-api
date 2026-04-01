@@ -3,95 +3,98 @@
     {
       "id": "beef",
       "title": "Classic Beef Burger",
-      "steps": [
-        {
-          "id": "bun",
-          "type": "multiple-choice",
-          "instruction": "Choose your bun",
-          "options": ["Sesame", "Brioche", "Lettuce Wrap"],
-          "feedback": null
-        },
-        {
-          "id": "protein",
-          "type": "multiple-choice",
-          "instruction": "Choose your protein",
-          "options": ["Single Beef", "Double Beef", "Plant-Based"],
-          "feedback": null
-        },
-        {
-          "id": "toppings",
-          "type": "multiple-choice",
-          "instruction": "Choose your toppings",
-          "options": ["Lettuce", "Tomato", "Pickles", "Onions"],
-          "feedback": null
-        },
-        {
-          "id": "sauce",
-          "type": "text",
-          "instruction": "Enter number of sauce servings",
-          "feedback": {
-            "condition": "amount > 3",
-            "message": "Too much sauce might overpower the flavor!"
-          }
-        },
-        {
-          "id": "extras",
-          "type": "image-selection",
-          "instruction": "Choose extras",
-          "imageOptions": [
-            { "url": "img/cheese.jpg", "label": "Cheese" },
-            { "url": "img/bacon.jpg", "label": "Bacon" },
-            { "url": "img/double.jpg", "label": "Double Patty" }
-          ],
-          "feedback": null
-        }
-      ]
+      "stepIds": ["bun1", "protein1", "toppings1", "sauce1", "extras1", "presentation1"]
     },
     {
       "id": "chicken",
       "title": "Grilled Chicken Burger",
-      "steps": [
-        {
-          "id": "bun",
-          "type": "multiple-choice",
-          "instruction": "Choose your bun",
-          "options": ["Sesame", "Brioche", "Lettuce Wrap"],
-          "feedback": null
-        },
-        {
-          "id": "protein",
-          "type": "multiple-choice",
-          "instruction": "Choose your protein",
-          "options": ["Grilled Chicken", "Crispy Chicken", "Plant-Based"],
-          "feedback": null
-        },
-        {
-          "id": "toppings",
-          "type": "multiple-choice",
-          "instruction": "Choose your toppings",
-          "options": ["Lettuce", "Tomato", "Pickles", "Onions"],
-          "feedback": null
-        },
-        {
-          "id": "sauce",
-          "type": "text",
-          "instruction": "Enter number of sauce servings",
-          "feedback": {
-            "condition": "amount > 2",
-            "message": "Too much sauce might make it soggy!"
-          }
-        },
-        {
-          "id": "extras",
-          "type": "image-selection",
-          "instruction": "Choose extras",
-          "imageOptions": [
-            { "url": "img/cheese.jpg", "label": "Cheese" },
-            { "url": "img/bacon.jpg", "label": "Bacon" },
-            { "url": "img/double.jpg", "label": "Double Patty" }
-          ],
-          "feedback": null
-        }
+      "stepIds": ["bun2", "protein2", "toppings2", "sauce2", "extras2", "presentation2"]
+    }
+  ],
+  "steps": [
+    {
+      "id": "bun1",
+      "type": "multiple-choice",
+      "instruction": "Choose your bun",
+      "options": ["Sesame", "Sweet Bun", "Lettuce Wrap"]
+    },
+    {
+      "id": "protein1",
+      "type": "multiple-choice",
+      "instruction": "Choose your protein",
+      "options": ["Single Beef", "Double Beef", "Plant-Based"]
+    },
+    {
+      "id": "toppings1",
+      "type": "multiple-choice",
+      "instruction": "Choose your toppings",
+      "options": ["Lettuce", "Tomato", "Pickles", "Onions"]
+    },
+    {
+      "id": "sauce1",
+      "type": "multiple-choice",
+      "instruction": "Choose your sauce",
+      "options": ["Ketchup", "Mayo", "Spicy Chipotle"],
+      "comboFeedback": "Spicy sauce with a sweet bun is not the best match."
+    },
+    {
+      "id": "extras1",
+      "type": "multiple-choice",
+      "instruction": "Choose extras",
+      "options": ["Cheese", "Bacon", "Double Patty"]
+    },
+    {
+      "id": "presentation1",
+      "type": "image-selection",
+      "instruction": "Choose your burger presentation style",
+      "imageOptions": [
+        { "url": "src/images/platedBurger.jpg", "label": "Burger on plate" },
+        { "url": "src/images/wrappedBurger.jpg", "label": "Wrapped burger" },
+        { "url": "src/images/comboBurger.jpg", "label": "Burger with drink and fries" }
+      ]
+    },
+
+    {
+      "id": "bun2",
+      "type": "multiple-choice",
+      "instruction": "Choose your bun",
+      "options": ["Sesame", "Sweet Bun", "Lettuce Wrap"]
+    },
+    {
+      "id": "protein2",
+      "type": "multiple-choice",
+      "instruction": "Choose your protein",
+      "options": ["Grilled Chicken", "Crispy Chicken", "Plant-Based"]
+    },
+    {
+      "id": "toppings2",
+      "type": "multiple-choice",
+      "instruction": "Choose your toppings",
+      "options": ["Lettuce", "Tomato", "Pickles", "Onions"]
+    },
+    {
+      "id": "sauce2",
+      "type": "text",
+      "instruction": "Enter number of sauce servings",
+      "feedback": {
+        "condition": "amount > 2",
+        "message": "Too much sauce might make it soggy!"
+      }
+    },
+    {
+      "id": "extras2",
+      "type": "multiple-choice",
+      "instruction": "Choose extras",
+      "options": ["Cheese", "Bacon", "Double Patty"]
+    },
+    {
+      "id": "presentation2",
+      "type": "image-selection",
+      "instruction": "Choose your burger presentation style",
+      "imageOptions": [
+        { "url": "src/images/platedBurger.jpg", "label": "Burger on plate" },
+        { "url": "src/images/wrappedBurger.jpg", "label": "Wrapped burger" },
+        { "url": "src/images/comboBurger.jpg", "label": "Burger with drink and fries" }
       ]
     }
   ]
