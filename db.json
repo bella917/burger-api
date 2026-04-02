@@ -37,6 +37,15 @@
       "options": ["Ketchup", "Mayo", "Spicy Chipotle"],
       "comboFeedback": "Spicy sauce with a sweet bun is not the best match."
     },
+        {
+      "id": "sauce1a",
+      "type": "text",
+      "instruction": "Enter number of sauce servings",
+      "feedback": {
+        "condition": "amount > 2",
+        "message": "Too much sauce might make it soggy!"
+      }
+    },
     {
       "id": "extras1",
       "type": "multiple-choice",
@@ -74,6 +83,13 @@
     },
     {
       "id": "sauce2",
+      "type": "multiple-choice",
+      "instruction": "Choose your sauce",
+      "options": ["Ketchup", "Mayo", "Spicy Chipotle"],
+      "comboFeedback": "Spicy sauce with a sweet bun is not the best match."
+    },
+    {
+      "id": "sauce2a",
       "type": "text",
       "instruction": "Enter number of sauce servings",
       "feedback": {
