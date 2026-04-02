@@ -3,12 +3,12 @@
     {
       "id": "beef",
       "title": "Classic Beef Burger",
-      "stepIds": ["bun1", "protein1", "toppings1", "sauce1", "extras1", "presentation1"]
+      "stepIds": ["bun1", "protein1", "toppings1", "sauce1", "sauce1a", "extras1", "presentation1"]
     },
     {
       "id": "chicken",
       "title": "Grilled Chicken Burger",
-      "stepIds": ["bun2", "protein2", "toppings2", "sauce2", "extras2", "presentation2"]
+      "stepIds": ["bun2", "protein2", "toppings2", "sauce2", "sauce2a", "extras2", "presentation2"]
     }
   ],
   "steps": [
